@@ -88,7 +88,7 @@ const Dashboard = () => {
         <div></div>
         </nav>
 
-        <div className='flex justify-between items-center mt-4 px-7 pb-4'>
+        <div className='flex justify-between items-center mt-4 px-7 pb-4 relative z-10'>
           <div className='heading'>
               <h1 className='font-bold text-lg '>CNAPP Dashboard</h1>
           </div>
