@@ -1,0 +1,98 @@
+.sliding-panel {
+    position: fixed;
+    top: 0;
+    right: -50%; /* Panel starts hidden on the right */
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+    transition: right 0.3s ease;
+    z-index: 1000;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sliding-panel.open {
+    right: 0; /* Slide in from the right */
+    padding: 0;
+  }
+  
+  .sliding-panel-header {
+    font-size: bold;
+    padding:0 1rem;
+    padding-right: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #323ea8;
+    color: white;
+  }
+  .sliding-panel-info{
+    text-align: left;
+    padding: 0 1rem;
+    margin-bottom: 1rem;
+  }
+
+  .btnB-style{
+    height: 0.2rem;
+    width: 4rem;
+    background-color: rgb(220, 216, 216);
+  }
+  .btnB-style-active{
+    height: 0.2rem;
+    width: 4rem;
+    background-color:#232a6e;
+  }
+
+  .hidden-radio{
+    display: none;
+  }
+
+  .option-label{
+    cursor: pointer;
+    font-size: small;
+    color: rgb(190, 190, 213);
+  }
+  .option-label:hover,.selected{
+    color: #232a6e;
+  }
+  
+  .sliding-panel-content {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sliding-panel-content label {
+    margin-bottom: 10px;
+    font-weight: bold;
+  }
+  
+  .sliding-panel-content input,
+  .sliding-panel-content textarea {
+    margin-bottom: 10px;
+    padding: 8px;
+    border-radius: 4px;
+    border: 1px solid #ccc;
+  }
+  
+  .submit-btn,.close-btn{
+    font-weight:500;
+    padding: 0.5rem 1.25rem;
+    border: 2px solid #323ea8;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    background-color: #323ea8;
+    color: white;
+  }
+  
+  .submit-btn:hover,
+  .close-btn:hover{
+    background-color: #1c2152;
+  }
+  .cancel-btn:hover{
+    background-color: #ebe4e4;
+  } 
+  
