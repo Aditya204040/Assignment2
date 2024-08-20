@@ -71,7 +71,7 @@ const Dashboard = () => {
         value={searchQuery}
         onChange={handleSearchChange}
         />
-        {isFocused && searchQuery && (<div className=' absolute border-2 border-white bg-slate-300 py-4 m-2 rounded-md w-[22rem]'>
+        {isFocused && searchQuery && (<div className=' absolute border-2 border-white bg-slate-300 py-4 m-2 rounded-md w-[22rem] z-50'>
           {filteredWidgets.length > 0 ? (
             filteredWidgets.map(widget => (
               <div key={widget.id} className="widget-item">
